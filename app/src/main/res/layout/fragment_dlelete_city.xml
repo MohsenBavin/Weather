@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DleleteCityFragment">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/backColor">
+    <TextView
+        android:id="@+id/txt_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to remove"
+        android:textSize="20sp"
+        android:textColor="@color/whiteColor"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtcitydl"
+        android:textColor="@color/pinkcolo"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="tehran"
+        android:layout_centerInParent="true"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/vi2"
+        android:layout_below="@id/txtcitydl"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btnNoDelete"
+        style="@style/CustomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcitydl"
+        android:layout_toLeftOf="@id/vi2"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_shape_red"
+        android:text="No" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/btnYesDelete"
+        style="@style/CustomButton"
+        android:background="@drawable/button_shape_green"
+        android:layout_below="@id/txtcitydl"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/vi2"
+
+        />
+
+  </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor">
+<EditText
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:id="@+id/edt_search_city"
+    android:hint="Enter Ciy Name"
+    android:textColor="@color/whiteColor"
+    android:textColorHint="@color/whiteColor"
+    android:maxLines="1"
+    android:maxLength="15"
+    android:inputType="text"
+    android:textSize="20sp"
+    android:layout_centerInParent="true"
+    android:textAlignment="center"/>
+   <View
+       android:layout_width="1dp"
+       android:layout_height="1dp"
+       android:id="@+id/vi"
+       android:layout_below="@id/edt_search_city"
+       android:layout_centerHorizontal="true"
+       />
+
+   <Button
+       android:id="@+id/btnCancelCity"
+       style="@style/CustomButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/edt_search_city"
+       android:layout_toLeftOf="@id/vi"
+       android:layout_margin="15dp"
+       android:background="@drawable/button_shape_red"
+       android:text="cancel" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="add"
+    android:id="@+id/btnAddCity"
+    style="@style/CustomButton"
+    android:background="@drawable/button_shape_green"
+    android:layout_below="@id/edt_search_city"
+    android:layout_margin="15dp"
+    android:layout_toRightOf="@id/vi"
+
+ />
+
+</RelativeLayout>
+
+</FrameLayout>

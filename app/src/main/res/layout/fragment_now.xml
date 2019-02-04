@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NowFragment"
+    android:background="#dad0d0"
+    android:id="@+id/frameLayout">
+
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:elevation="15dp"
+    android:layout_margin="10dp"
+    android:id="@+id/cardNow1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlv_now_1">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/imgNowState"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/w_01d"
+       android:layout_centerHorizontal="true"/>
+
+
+
+            <TextView
+                android:id="@+id/txtCityNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tehran"
+                android:textSize="20sp"
+                android:layout_below="@id/imgNowState"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+        <TextView
+            android:id="@+id/txtDateNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019/08/02"
+            android:layout_below="@id/imgNowState"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp" />
+            <TextView
+                android:id="@+id/txtDegreeNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 c"
+                android:textSize="40sp"
+                android:layout_below="@id/txtCityNow"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="70dp"
+
+                />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_hi_now"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/txtDegreeNow"
+            android:layout_below="@id/imgNowState"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="35dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dropup"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi   "
+                />
+            <TextView
+                android:id="@+id/hi_temp_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 c"
+                android:layout_marginLeft="10dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_low_now"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/txtDegreeNow"
+            android:layout_below="@id/linear_hi_now"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dropdown"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low"
+                />
+            <TextView
+                android:id="@+id/low_temp_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 c"
+                android:layout_marginLeft="10dp"
+                />
+
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDescriptionNow"
+                android:text="Rainy"
+                android:textSize="20sp"
+                android:layout_below="@id/txtDegreeNow"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_details"
+        android:text="Details"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/whiteColor"
+        android:layout_below="@id/cardNow1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/linear_details"
+        android:layout_below="@id/txt_details"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rlv_press">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure"
+                    android:id="@+id/txtpress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgPress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txtpress"
+                    android:src="@drawable/pressure"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_press_value"
+                    android:layout_below="@id/imgPress"
+                    android:layout_centerHorizontal="true"
+                    android:text="700 mmhg"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rlv_wind">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wind"
+                    android:id="@+id/txtVisibility"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgVisibility"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txtVisibility"
+                    android:src="@drawable/wind"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_Wind_Speed"
+                    android:layout_below="@id/imgVisibility"
+                    android:layout_centerHorizontal="true"
+                    android:text="20 km"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rlv_hum">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:id="@+id/txtHum"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgHum"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txtHum"
+                    android:src="@drawable/humidity"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_Hum_value"
+                    android:layout_below="@id/imgHum"
+                    android:layout_centerHorizontal="true"
+                    android:text="700 mmhg"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sun_rise_set"
+        android:layout_below="@id/linear_details"
+        android:text="Sunrise And Sunset"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/whiteColor"
+
+        android:layout_marginTop="10dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/cardSun"
+        android:layout_below="@id/txt_sun_rise_set"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlv_sun">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lin_sun">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/txt_sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="08:45"
+                    android:textSize="20sp"
+                    android:layout_below="@id/imgSunrise"/>
+                <ImageView
+                    android:id="@+id/imgSunrise"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sunrise" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_sunset"
+                    android:text="18:45"
+                    android:textSize="20sp"
+                    android:layout_below="@id/imgSunset"
+                    android:layout_centerHorizontal="true" />
+                <ImageView
+                    android:id="@+id/imgSunset"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/sunset"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+</RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hourly"
+        android:id="@+id/txtHour"
+        android:layout_below="@id/cardSun"
+        android:textColor="@color/whiteColor"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHour"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cardHourly">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcycle_hourly">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+
+    </ScrollView>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/city_shape"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center">
+/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/citytab"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imgLocation"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txttab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="tehran"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imgLocation"/>
+        <ImageView
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_drop_down_white_27x27"
+            android:layout_toRightOf="@id/txttab"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</FrameLayout>
